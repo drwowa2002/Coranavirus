@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(62, 124, 153);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    width: 480px;
+    height: 400px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.answer_yes, .answer_no {
+    display: none;
+}
+
+.answer_buttons {
+    display: flex;
+}
+
+input {
+    display: none;
+}
+
+.label_yes {
+    margin-right: 50px;
+    background-color: green;
+    border: black solid 2px;
+    padding: 3px 26px;
+}
+
+.label_no {
+    background-color: violet;
+    border: black solid 2px;
+    padding: 3px 20px;
+}
+
+h1 {
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+    color: rgb(62, 124, 153);
+    font-weight: 600;
+}
+
+section > h2 {
+    color: rgb(62, 124, 153);
+    font-size: 24px;
+}
+
+#YES:checked ~ .answer_yes{
+    display: flex;
+}
+
+#NO:checked ~ .answer_no{
+    display: flex;
+}
+
+.answer_yes, .answer_no {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.answer_yes label, .answer_no label {
+    background-color: red;
+    color: white;
+    border: red solid 2px;
+    padding: 6px 20px;
+    font-size: 17px;
+}
+
+.answer_yes h2, .answer_no h2 {
+    width: 70%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(62, 124, 153);
+}
+
+
